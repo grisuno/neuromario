@@ -1,1 +1,24 @@
+# Paquetes esenciales de PyTorch (modo CPU)
+torch>=1.12.0,<2.0
+torchvision>=0.13.0,<1.0
+torchaudio>=0.12.0,<1.0
 
+# Entorno de Super Mario Bros
+nes-py==8.2.1
+gym-super-mario-bros==7.4.0
+
+# Gym clásico (versión compatible con wrappers antiguos)
+gym==0.21.0
+
+# Procesamiento numérico y visualización
+numpy>=1.21.0
+matplotlib>=3.5.0
+opencv-python>=4.5.0
+Pillow>=9.0.0
+
+# Utilidades
+tqdm>=4.60.0
+scikit-learn>=1.0.0
+
+# Visualización 3D (opcional pero usado en tu script)
+umap-learn>=0.5.0
