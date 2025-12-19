@@ -1,0 +1,23 @@
+# environment.yml
+name: trimario-env
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - pytorch>=1.12.0,<2.0
+  - torchvision>=0.13.0,<1.0
+  - torchaudio>=0.12.0,<1.0
+  - numpy>=1.21.0
+  - matplotlib>=3.5.0
+  - opencv>=4.5.0
+  - scikit-learn>=1.0.0
+  - tqdm>=4.60.0
+  - pillow>=9.0.0
+  - pip
+  - pip:
+      - nes-py==8.2.1
+      - gym-super-mario-bros==7.4.0
+      - gym==0.21.0
+      - umap-learn>=0.5.0
