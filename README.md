@@ -81,6 +81,8 @@ Conceptos que hasta ahora pertenecían al dominio de la biología se están conv
 
 [https://medium.com/@lazyown.redteam/desmontamos-la-ia-que-juega-a-super-mario-5-claves-de-su-cerebro-digital-que-no-esperabas-3222947f576b?postPublishedType=repub](https://medium.com/@lazyown.redteam/desmontamos-la-ia-que-juega-a-super-mario-5-claves-de-su-cerebro-digital-que-no-esperabas-3222947f576b?postPublishedType=repub)
 
+[https://deepwiki.com/grisuno/neuromario](https://deepwiki.com/grisuno/neuromario)
+
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Shell Script](https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white) ![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white) [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Y8Y2Z73AV)
