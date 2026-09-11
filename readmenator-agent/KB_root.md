@@ -1,0 +1,86 @@
+# Subsystem: root
+
+## app.py
+- Layer: utility
+- Doc: _*_ coding: utf8 _*_
+- Language: py
+- Symbols:
+  - `compute_real_saliency` (function, line 55) `def compute_real_saliency(agent, state, aux_features)`
+  - `run_and_log_activations` (function, line 130) `def run_and_log_activations(agent, env, num_steps)`
+  - `plot_activation_3d_and_bars` (function, line 215) `def plot_activation_3d_and_bars(log_data)`
+  - `visualize_attention_layers` (function, line 323) `def visualize_attention_layers(agent, state, aux_features)`
+- Depends on: `trimario4.py`
+
+## install.sh
+- Layer: utility
+- Language: sh
+
+## trimario4.py
+- Layer: utility
+- Language: py
+- Symbols:
+  - `_safe_text` (function, line 34) `def _safe_text(self, x, y, s)`
+  - `TimeoutException` (class, line 45) `class TimeoutException(Exception)`
+  - `timeout_handler` (method, line 48) `def timeout_handler(signum, frame)`
+  - `safe_step_with_timeout` (method, line 51) `def safe_step_with_timeout(env, action, timeout_seconds)`
+  - `Config` (class, line 68) `class Config`
+  - `log_detailed_metrics` (method, line 181) `def log_detailed_metrics(agent, ep, scores, losses, accuracies)`
+  - `AudioFeatureGenerator` (class, line 236) `class AudioFeatureGenerator(Module)`
+  - `FrameSkip` (class, line 441) `class FrameSkip(Wrapper)`
+  - `StuckMonitor` (class, line 473) `class StuckMonitor(Wrapper)`
+  - `preprocess_frame` (method, line 552) `def preprocess_frame(frame)`
+  - `stack_frames` (method, line 580) `def stack_frames(stacked, frame, is_new)`
+  - `VisualFeatureExtractor` (class, line 600) `class VisualFeatureExtractor(Module)`
+  - `StableLiquidNeuron` (class, line 686) `class StableLiquidNeuron(Module)`
+  - `RightHemisphere` (class, line 815) `class RightHemisphere(Module)`
+  - `CorpusCallosum` (class, line 924) `class CorpusCallosum(Module)`
+  - `PrioritizedReplayBuffer` (class, line 1142) `class PrioritizedReplayBuffer`
+  - `LeftHemisphere` (class, line 1206) `class LeftHemisphere(Module)`
+  - `EpisodicMemory` (class, line 1323) `class EpisodicMemory(Module)`
+  - `TricameralMarioAgent` (class, line 1450) `class TricameralMarioAgent(Module)`
+  - `compute_focus_quality_score` (method, line 1797) `def compute_focus_quality_score(saliency_map)`
+  - `get_aux_features` (method, line 1830) `def get_aux_features(info, history)`
+  - `__init__` (method, line 237) `def __init__(self, device)`
+  - `extract_event_features` (method, line 309) `def extract_event_features(self, info)`
+  - `forward` (method, line 365) `def forward(self, info, visual_context)`
+  - `reset` (method, line 429) `def reset(self)`
+  - `__init__` (method, line 442) `def __init__(self, env, skip)`
+  - `step` (method, line 446) `def step(self, action)`
+  - `__init__` (method, line 474) `def __init__(self, env, stuck_limit, inactivity_limit)`
+  - `reset_stats` (method, line 480) `def reset_stats(self)`
+  - `step` (method, line 490) `def step(self, action)`
+  - `reset` (method, line 529) `def reset(self)`
+  - `__init__` (method, line 601) `def __init__(self, device)`
+  - `forward` (method, line 658) `def forward(self, x)`
+  - `__init__` (method, line 687) `def __init__(self, in_dim, out_dim, device)`
+  - `forward` (method, line 715) `def forward(self, x)`
+  - `compute_plasticity_gradient` (method, line 755) `def compute_plasticity_gradient(self, x, output, td_error)`
+  - `post_step_update` (method, line 806) `def post_step_update(self)`
+  - `__init__` (method, line 816) `def __init__(self, input_dim, output_dim, aux_dim, device)`
+  - `forward` (method, line 841) `def forward(self, stacked_frame, aux_features, goal_x, current_x, info, visualization_mode)`
+  - `forward_legacy` (method, line 913) `def forward_legacy(self, stacked_frame, aux_features, goal_x, current_x)`
+  - `__init__` (method, line 925) `def __init__(self, dim)`
+  - `forward` (method, line 961) `def forward(self, visual_features, audio_features, semantic_features, td_error)`
+  - `reset_fatigue` (method, line 1136) `def reset_fatigue(self)`
+  - `__init__` (method, line 1143) `def __init__(self, capacity)`
+  - `__len__` (method, line 1149) `def __len__(self)`
+  - `add` (method, line 1152) `def add(self, experience, td_error)`
+  - `sample` (method, line 1163) `def sample(self, batch_size, beta)`
+  - `update_priorities` (method, line 1200) `def update_priorities(self, indices, td_errors)`
+  - `__init__` (method, line 1207) `def __init__(self, n_actions, input_dim, hidden_dim)`
+  - `forward` (method, line 1248) `def forward(self, x)`
+  - `forward_with_cache` (method, line 1271) `def forward_with_cache(self, x)`
+  - `reset_memory` (method, line 1291) `def reset_memory(self)`
+  - `store_experience` (method, line 1300) `def store_experience(self, x)`
+  - `__init__` (method, line 1324) `def __init__(self, device)`
+  - `store_episode` (method, line 1355) `def store_episode(self, event_type, liquid_state)`
+  - `retrieve_similar_episode` (method, line 1400) `def retrieve_similar_episode(self, current_state)`
+  - `__init__` (method, line 1451) `def __init__(self, n_actions, device)`
+  - `act` (method, line 1511) `def act(self, state, aux_features, epsilon, info)`
+  - `remember` (method, line 1542) `def remember(self, s, a, r, s_next, aux_s, aux_s_next, done, td_error)`
+  - `update_target_networks` (method, line 1554) `def update_target_networks(self, tau)`
+  - `replay` (method, line 1566) `def replay(self, batch_size, gamma)`
+  - `propose_goal` (method, line 1746) `def propose_goal(self, current_x, episode_num)`
+  - `is_goal_achieved` (method, line 1770) `def is_goal_achieved(self, goal_x, current_x)`
+  - `reset` (method, line 1773) `def reset(self)`
+- Imported by: `app.py`
