@@ -1,0 +1,98 @@
+{
+  "concepts": [
+    {
+      "name": "compute",
+      "files": [
+        "app.py",
+        "trimario4.py"
+      ],
+      "mentions": 3,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "del",
+      "files": [
+        "app.py",
+        "trimario4.py"
+      ],
+      "mentions": 3,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "log",
+      "files": [
+        "app.py",
+        "trimario4.py"
+      ],
+      "mentions": 2,
+      "confidence": "EXTRACTED"
+    }
+  ],
+  "relations": [
+    {
+      "source": "compute",
+      "target": "del",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "app.py->trimario4.py"
+      ]
+    },
+    {
+      "source": "compute",
+      "target": "log",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "app.py->trimario4.py"
+      ]
+    },
+    {
+      "source": "del",
+      "target": "compute",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "app.py->trimario4.py"
+      ]
+    },
+    {
+      "source": "del",
+      "target": "log",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "app.py->trimario4.py"
+      ]
+    },
+    {
+      "source": "log",
+      "target": "compute",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "app.py->trimario4.py"
+      ]
+    },
+    {
+      "source": "log",
+      "target": "del",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "app.py->trimario4.py"
+      ]
+    }
+  ],
+  "dialectic": [
+    "Thesis: `compute` centralizes 2 files; Antithesis: `del` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `depends_on` explicit?",
+    "Thesis: `compute` centralizes 2 files; Antithesis: `log` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `depends_on` explicit?",
+    "Thesis: `del` centralizes 2 files; Antithesis: `log` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `depends_on` explicit?"
+  ]
+}
