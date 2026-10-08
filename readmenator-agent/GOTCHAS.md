@@ -4,15 +4,9 @@
 
 These files have the most connections. Changes here have high blast radius.
 
-- `trimario4.py` (score: 8.40, imported by 1 files)
+- `trimario4.py` (score: 8.40)
 - `app.py` (score: 2.40)
 - `install.sh` (score: 0.00)
-
-## Blast Radius (change impact)
-
-Editing these files can break the listed number of dependents. Run their tests after any change.
-
-- `trimario4.py` -- 1 direct, 1 total dependents
 
 ## Hotspots (complexity + centrality)
 

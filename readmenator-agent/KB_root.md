@@ -1,8 +1,8 @@
 # Subsystem: root
 
 ## app.py
-- Doc: Autor: Gris Iscomeback Correo electrónico: grisiscomeback[at]gmail[dot]com Fecha de creación...
 - Layer: utility
+- Doc: app.py  Autor: Gris Iscomeback Correo electrónico: grisiscomeback[at]gmail[dot]com Fecha de creación: xx/xx/xxxx Licenci
 - Language: py
 - Symbols:
   - `compute_real_saliency` (function, line 55) `def compute_real_saliency(agent, state, aux_features)`
@@ -16,7 +16,6 @@
 - Language: sh
 
 ## trimario4.py
-- Doc: safe_step_with_timeout: Ejecuta step con timeout para detectar bloqueos
 - Layer: utility
 - Language: py
 - Symbols:

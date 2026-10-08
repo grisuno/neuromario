@@ -12,7 +12,7 @@
 **Total Files Parsed:** 3 | **Total Symbols Extracted:** 68 | **Total Imports:** 32
  | **Resolved Imports:** 1
 
-<!-- ranking_model: v1.0 | weights: {ppr:0.45,auth:0.2,test:0.15,doc:0.1,fresh:0.1} | alpha:0.85 | commit:1e0fd0b | date:2026-07-18 -->
+<!-- ranking_model: v1.0 | weights: {ppr:0.45,auth:0.2,test:0.15,doc:0.1,fresh:0.1} | alpha:0.85 | commit:05a4468 | date:2026-07-18 -->
 
 
 ## Table of Contents
@@ -26,13 +26,12 @@
 7. [Hotspot Analysis](#hotspot-analysis)
 8. [Change Impact Analysis](#change-impact-analysis)
 9. [Suggested Linting Rules](#suggested-linting-rules)
-10. [Concept Graph](#concept-graph)
-11. [Orphans](#orphans)
-12. [Query Recipes](#query-recipes)
-13. [Structural Knowledge Map](#structural-knowledge-map)
-14. [UML Class Diagram](#uml-class-diagram)
-15. [Code Property Graph](#code-property-graph)
-16. [Architecture Reference](#architecture-reference)
+10. [Orphans](#orphans)
+11. [Query Recipes](#query-recipes)
+12. [Structural Knowledge Map](#structural-knowledge-map)
+13. [UML Class Diagram](#uml-class-diagram)
+14. [Code Property Graph](#code-property-graph)
+15. [Architecture Reference](#architecture-reference)
     - [PY (2 files)](#py-2-files)
     - [SH (1 files)](#sh-1-files)
 
@@ -135,37 +134,6 @@ Files ranked by combined complexity (symbol count) and centrality (connection co
 | `trimario4.py` | 1.000 | 1.000 | 1.000 | 64 | 21 |
 | `app.py` | 0.062 | 0.619 | 0.396 | 4 | 13 |
 | `install.sh` | 0.000 | 0.000 | 0.000 | 0 | 0 |
-
----
-
-## Concept Graph
-
-Semantic second-brain layer: nouns are concept nodes, verbs are edges. Each noun maps atomically to a file set (EXTRACTED); each verb aggregates structural imports, calls, and inherits into consumes, invokes, extends, depends_on, or bridges (INFERRED).
-
-**3 concepts, 6 relations.**
-
-| Concept | Files | Mentions |
-|---------|-------|----------|
-| `compute` | 2 | 3 |
-| `del` | 2 | 3 |
-| `log` | 2 | 2 |
-
-### Verb Edges
-
-| Source | Verb | Target | Strength | Evidence |
-|--------|------|--------|----------|----------|
-| `compute` | `depends_on` | `del` | 1.00 | 1 |
-| `compute` | `depends_on` | `log` | 1.00 | 1 |
-| `del` | `depends_on` | `compute` | 1.00 | 1 |
-| `del` | `depends_on` | `log` | 1.00 | 1 |
-| `log` | `depends_on` | `compute` | 1.00 | 1 |
-| `log` | `depends_on` | `del` | 1.00 | 1 |
-
-### Dialectic Prompts
-
-- Thesis: `compute` centralizes 2 files; Antithesis: `del` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `depends_on` explicit?
-- Thesis: `compute` centralizes 2 files; Antithesis: `log` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `depends_on` explicit?
-- Thesis: `del` centralizes 2 files; Antithesis: `log` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `depends_on` explicit?
 
 ---
 
