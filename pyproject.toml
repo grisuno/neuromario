@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "topomario"
+version = "0.1.0"
+description = "Complex-valued spectral model for playing Super Mario Bros"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "GPL v3"}
+authors = [
+    {name = "Gris Iscomeback", email = "grisiscomeback@gmail.com"}
+]
+dependencies = [
+    "torch>=2.0.0",
+    "numpy>=1.24.0",
+    "safetensors>=0.4.0",
+]
+
+[project.optional-dependencies]
+train = [
+    "gym>=0.26.0",
+    "gym-super-mario-bros>=7.4.0",
+    "nes-py>=8.2.0",
+]
+dev = [
+    "pytest>=7.0.0",
+    "ruff>=0.1.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["topomario*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
