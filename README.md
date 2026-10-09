@@ -1,7 +1,7 @@
 # TopoMario
 
-TopoExploit's TopoGPT2 architecture (quaternion spectral layers, 8-node torus
-brain, sliding-window attention) repurposed as a policy network for Super Mario
+[TopoExploit's](https://github.com/grisuno/TopoExploit) [TopoGPT2](https://github.com/grisuno/TopoGPT2) & [TopoGPT3](https://github.com/grisuno/TopoGPT3) [architecture](https://zenodo.org/records/20388758) [(quaternion spectral layers, 8-node torus
+brain, sliding-window attention)](https://zenodo.org/records/20778398) repurposed as a policy network for Super Mario
 Bros, plus the anti-stuck machinery ported from
 [neuromario](https://github.com/grisuno/neuromario).
 
